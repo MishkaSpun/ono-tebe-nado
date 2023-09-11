@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-   width: 100%;
+   width: 90%;
    display: grid;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr min-content 1fr;
@@ -38,6 +38,8 @@
     display: block;
     width: 148px;
     justify-self: center;
+    margin-right: 355px;
+    margin-left: 209px;
 }
 
 .header_logo_image {
@@ -54,34 +56,70 @@
 
 .header_adress {
     align-self: center;
-    justify-self: end;
+    justify-self: start;
 }
 
 .footer {
    width: 100%;
    display: grid;
+   column-gap: 356px;
    grid-template-rows: 1fr;
-   grid-template-columns: 1fr min-content 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
    margin: 0px 50px 90px;
 }
 
-.footer_adress {}
+.footer_adress {
+    align-self: start;
+    justify-self: start;
+}
 
-.footer__menu-list {}
+.footer_menu {
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+}
 
-.footer__menu-list-item {}
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
 
-.footer__menu-link {}
+}
 
-.footer__menu-link_active {}
+.footer__menu-list-item {
+    align-self: center;
+}
 
-.footer__social-list {}
+.footer__menu-link {
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none
+}
 
-.footer__social-list-item {}
+.footer__menu-link_active {
+    text-decoration: none;
+}
 
-.footer__social-link {}
+.social-list {
+   display: block;
+   max-height: 48px;
+   max-width: 240px;
+}
 
-.footer__social-icon {}
+.footer__social-list {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer__social-list-item {
+    list-style: none;
+}
+
+.footer__social-icon {
+    height: 100%;
+    width: 100%;
+}
 
 
 
