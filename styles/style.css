@@ -3,11 +3,12 @@
    width: 90%;
    display: grid;
    grid-template-rows: 1fr;
-   grid-template-columns: 1fr min-content 1fr;
-   margin: 92px 49px 0px 51px;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding: 92px 49px 96px 51px;
 }
 
 .header_menu {
+    width: 90%;
     align-self: center;
     font-size: 18px;
     font-style: normal;
@@ -17,34 +18,29 @@
 .header_link-list {
     display: flex;
     column-gap: 13px;
-
 }
 
 .header__links-list-item {
     list-style: circle inside;
-    
 }
 
 .header__links-list-item_no-bullit {
     list-style: none;
 }
 
-.header__link {
-    text-decoration-line: underline;
-    text-decoration-skip-ink: none;
+.header__link_active {
+    text-decoration: none;
 }
 
 .header_logo {
     display: block;
     width: 148px;
     justify-self: center;
-    margin-right: 355px;
-    margin-left: 209px;
+    align-self: center;
 }
 
 .header_logo_image {
     width: 100%;
-    
 }
 
 .adress {
@@ -56,7 +52,46 @@
 
 .header_adress {
     align-self: center;
-    justify-self: start;
+    justify-self: center;
+}
+
+.cover {
+    width: 90%;
+    padding: 165px 50px 180px;
+    background-image: url(../images/cover.jpg);
+}
+
+.cover_tittle {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%; /* 115px */
+    text-transform: uppercase;
+}
+
+.letter-spacing {
+    letter-spacing: 30px;
+}
+
+/*.no-letter-spacing {
+    letter-spacing: 60px;
+}*/
+
+.aligned-text {
+    justify-self: flex-start;
+}
+
+.aligned-text_center {
+    align-self: center;
+}
+
+.aligned-text_right {
+    align-self: flex-end;
 }
 
 .footer {
@@ -66,6 +101,20 @@
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr;
    margin: 0px 50px 90px;
+}
+
+.cover__description {
+    display: flex;
+    
+    column-gap: 78px ;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+}
+.cover__description-text {
+    /*вписать значение word-spacing*/
 }
 
 .footer_adress {
