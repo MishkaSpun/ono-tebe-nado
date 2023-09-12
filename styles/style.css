@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-   width: 90%;
+   width: 96%;
    display: grid;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr;
@@ -8,7 +8,7 @@
 }
 
 .header_menu {
-    width: 90%;
+    width: 100%;
     align-self: center;
     font-size: 18px;
     font-style: normal;
@@ -56,65 +56,102 @@
 }
 
 .cover {
-    width: 90%;
-    padding: 165px 50px 180px;
+    display: flex;
+    flex-direction: column;
+    max-width: 96%;
+    position: relative;
+    height: 757px;
+    background-size: cover;
     background-image: url(../images/cover.jpg);
+    margin-bottom: 180px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .cover_tittle {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    padding: 160px 50px 0;
+    position: relative ;
+    z-index: 2;
     color: #FFF;
-    font-family: Raleway;
     font-size: 100px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 115%; /* 115px */
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 .letter-spacing {
     letter-spacing: 30px;
 }
 
-/*.no-letter-spacing {
+.no-letter-spacing {
     letter-spacing: 60px;
-}*/
+}
 
 .aligned-text {
     justify-self: flex-start;
 }
 
 .aligned-text_center {
-    align-self: center;
+   align-self: center;
+   line-height: 100%;
+    
 }
 
 .aligned-text_right {
     align-self: flex-end;
-}
-
-.footer {
-   width: 100%;
-   display: grid;
-   column-gap: 356px;
-   grid-template-rows: 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
-   margin: 0px 50px 90px;
+    line-height: 100%;
 }
 
 .cover__description {
     display: flex;
-    
+    justify-content: flex-end;
+    align-items: center;
+    padding: 137px 50px 52px;
+    color: #FFF;
+    position: relative;
+    z-index: 2;
     column-gap: 78px ;
+}
+.cover__description-text {
+    word-spacing: 18px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+}
+
+.bet-button {
+    background: transparent;
     color: #FFF;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px; /* 127.273% */
     text-transform: uppercase;
+    width: 257px;
+    height: 52px;
+    border: 1px solid #FFF;
 }
-.cover__description-text {
-    /*вписать значение word-spacing*/
+
+
+
+.footer {
+   width: 96%;
+   display: grid;
+   column-gap: 356px;
+   grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: 0px 50px 90px;
 }
 
 .footer_adress {
