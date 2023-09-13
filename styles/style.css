@@ -3,16 +3,16 @@
    width: 96%;
    display: grid;
    grid-template-rows: 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
-   padding: 92px 49px 96px 51px;
+   grid-template-columns: auto auto 1fr;
+   justify-content: start;
+   padding: 92px 49px 92px 51px;
 }
 
 .header_menu {
     width: 100%;
     align-self: center;
     font-size: 18px;
-    font-style: normal;
-    line-height: normal;
+    padding-right: 200px;
 }
 
 .header_link-list {
@@ -35,7 +35,6 @@
 .header_logo {
     display: block;
     width: 148px;
-    justify-self: center;
     align-self: center;
 }
 
@@ -46,13 +45,12 @@
 .adress {
     font-size: 18px;
     font-style: normal;
-    line-height: normal;
     line-height: 135%;
+    justify-self: end;
 }
 
 .header_adress {
     align-self: center;
-    justify-self: center;
 }
 
 .cover {
@@ -80,13 +78,13 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding: 160px 50px 0;
+    padding-top: 160px;
     position: relative ;
     z-index: 2;
     color: #FFF;
     font-size: 100px;
     font-weight: 700;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .letter-spacing {
@@ -97,8 +95,17 @@
     letter-spacing: 60px;
 }
 
+.letter-spacing_for_a {
+    letter-spacing: 45px;
+}
+
+.letter-spacing_for_no {
+    letter-spacing: 35px;
+}
+
 .aligned-text {
     justify-self: flex-start;
+    padding-left: 50px;
 }
 
 .aligned-text_center {
@@ -168,11 +175,10 @@
 }
 
 .lots__card-list-item {
-    display: flex;
-    flex-direction: column;
     width: 430px;
     height: 450px;
     padding: 50px 40px 50px;
+    display: flex;
 }
 
 .card_type_film {
@@ -184,6 +190,9 @@
 
 .card-link {
     text-decoration-line: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card__title {
@@ -218,11 +227,10 @@
     background-image: url(../images/card-lot-03.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;  
+    position: relative;
 }
 
 .lots__look-more-link {
-    color: #000;
     font-size: 20px;
     font-weight: 400;
     padding-left: 40px;
@@ -269,7 +277,7 @@
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 30px;
 }
 
 .footer {
@@ -277,7 +285,8 @@
    display: grid;
    column-gap: 356px;
    grid-template-rows: 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: auto 1fr auto;
+   padding: 0 50px 90px;
 }
 
 .footer_adress {
