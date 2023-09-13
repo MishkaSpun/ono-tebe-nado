@@ -100,7 +100,7 @@
 }
 
 .letter-spacing_for_no {
-    letter-spacing: 35px;
+    letter-spacing: 40px;
 }
 
 .aligned-text {
@@ -111,7 +111,6 @@
 .aligned-text_center {
    align-self: center;
    line-height: 100%;
-    
 }
 
 .aligned-text_right {
