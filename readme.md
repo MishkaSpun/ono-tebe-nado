@@ -1,1 +1,1 @@
-https://github.com/MishkaSpun/ono-tebe-nado
+https://github.com/MishkaSpun/ono-tebe-nado.git
