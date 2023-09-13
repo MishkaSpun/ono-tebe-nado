@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-   width: 90%;
+   max-width: 1440px;
    display: grid;
    grid-template-rows: 1fr;
    grid-template-columns: auto auto 1fr;
@@ -56,7 +56,7 @@
 .cover {
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 1440px;
     position: relative;
     height: 757px;
     background-size: cover;
@@ -151,7 +151,7 @@
 .lots {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    max-width: 1440px;
     padding: 180px 50px 181px;
 }
 
@@ -236,7 +236,7 @@
 }
 
 .about {
-    width: 90%;
+    max-width: 1440px;
     padding: 0 50px 180px;
     display: grid;
     grid-template-columns: 430px 1fr;
@@ -280,7 +280,7 @@
 }
 
 .footer {
-   width: 90%;
+   max-width: 1440px;
    display: grid;
    column-gap: 356px;
    grid-template-rows: 1fr;
